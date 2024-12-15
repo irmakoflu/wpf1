@@ -1,0 +1,179 @@
+﻿<Window x:Class="WpfFirst.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFirst"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="525" Width="350">
+   
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>   
+            <ColumnDefinition Width="*"/>   
+            <ColumnDefinition Width="*"/>   
+            <ColumnDefinition Width="*"/>   
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/> 
+        </Grid.RowDefinitions>
+        <Label  x:Name="resultlabel" Content="0"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               FontSize="60"
+               Grid.ColumnSpan="4"/>
+        <Button x:Name="acbutton"
+                Background="{StaticResource fırstopColor}"
+                Foreground="Black"
+            Content="AC"
+                Margin="5"
+                Grid.Row="1"/>
+        <Button x:Name="negativebutton"
+                 Background="{StaticResource fırstopColor}"
+ Foreground="Black"
+                Content="+/-"
+                Margin="5"
+                Grid.Row="1"
+                Grid.Column="1"/>
+        <Button x:Name="percantagebutton"
+                 Background="{StaticResource fırstopColor}"
+ Foreground="Black"
+            Content="%"
+         Margin="5"
+         Grid.Row="1"
+         Grid.Column="2"/>
+        <Button x:Name="divisionbutton" 
+                Click="operationbutton_click"
+                Background="{StaticResource operatorsColor}"
+                Foreground="White"
+            Content="/"
+         Margin="5"
+         Grid.Row="1"
+         Grid.Column="3"/>
+        <Button x:Name="sevenbutton"
+                 Background="#444444"
+
+            Content="7"
+         Margin="5"
+         Grid.Row="2" Click="numberbutton_Click"/>
+        <Button x:Name="eightbutton"
+                 Background="#444444"
+
+                Click="numberbutton_Click"
+            Content="8"
+         Margin="5"
+         Grid.Row="2"
+         Grid.Column="1"/>
+        <Button x:Name="ninebutton" 
+                 Background="#444444"
+ 
+                Click="numberbutton_Click"
+            Content="9"
+         Margin="5"
+         Grid.Row="2"
+         Grid.Column="2"/>
+        <Button x:Name="multiplicationbutton" 
+
+                  Click="operationbutton_click"
+                  Background="Orange"
+
+            Content="*"
+         Margin="5"
+         Grid.Row="2"
+         Grid.Column="3"/>
+        <Button x:Name="fourbutton" 
+                 Background="#444444"
+
+                Click="numberbutton_Click"
+                Content="4"
+         Margin="5"
+         Grid.Row="3"/>
+        <Button x:Name="fivebutton" 
+                Click="numberbutton_Click"
+                 Background="#444444"
+
+            Content="5"
+         Margin="5"
+         Grid.Row="3"
+         Grid.Column="1"/>
+        <Button x:Name="sixbutton" 
+                 Background="#444444"
+
+                Click="numberbutton_Click"
+                Content="6"
+         Margin="5"
+         Grid.Row="3"
+         Grid.Column="2"/>
+        <Button x:Name="minusbutton" 
+                 Click="operationbutton_click"
+                  Background="Orange"
+
+                Content="-"
+         Margin="5"
+         Grid.Row="3"
+         Grid.Column="3"/>
+        <Button x:Name="onebutton" 
+                 Background="#444444"
+
+                Click="numberbutton_Click"
+                Content="1"
+         Margin="5"
+         Grid.Row="4"/>
+        <Button x:Name="twobutton" 
+                 Background="#444444"
+ 
+                Click="numberbutton_Click"
+            Content="2"
+         Margin="5"
+         Grid.Row="4"
+         Grid.Column="1"/>
+        <Button x:Name="threebutton"
+                 Background="#444444"
+ 
+                Click="numberbutton_Click"
+         Content="3"
+         Margin="5"
+         Grid.Row="4"
+         Grid.Column="2"/>
+        <Button x:Name="plusbutton" 
+                  Click="operationbutton_click"
+                  Background="Orange"
+
+                Content="+"
+         Margin="5"
+         Grid.Row="4"
+         Grid.Column="3"/>
+        
+        
+        <Button x:Name="zerobutton" 
+                 Background="#444444"
+
+                Click="numberbutton_Click"
+                Content="0"
+         Margin="5"
+         Grid.Row="5"
+         Grid.ColumnSpan="2"/>
+        <Button x:Name="pointbutton" 
+                 Background="#444444"
+
+                Content="."
+         Margin="5"
+         Grid.Row="5"
+         Grid.Column="2"
+                Click="pointbutton_Click_1"/>
+        <Button x:Name="equalbutton" 
+                Content="="
+                  Background="Orange"
+
+         Margin="5"
+         Grid.Row="5"
+         Grid.Column="3"/>
+
+
+    </Grid>
+</Window>
